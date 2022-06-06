@@ -1,5 +1,19 @@
 <resources>
     <string name="app_name">Formulario</string>
 
+    <string name="etName">Name</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+    <string name="etConfirmPass">Confirm Password</string>
+    <string name="rbMale">Male</string>
+    <string name="rbFemale">Female</string>
+    <string name="etDate">Date of birth</string>
+    <string name="tvHobbies">Hobbies</string>
+    <string name="cbHobbie1">Swim</string>
+    <string name="cbHobbie2">Read</string>
+    <string name="cbHobbie3">Dance</string>
+    <string name="cbHobbie4">Run</string>
+    <string name="btnRegister">Sign Up</string>
+
 
 </resources>
