@@ -14,6 +14,14 @@
     <string name="cbHobbie3">Dance</string>
     <string name="cbHobbie4">Run</string>
     <string name="btnRegister">Sign Up</string>
+    <string name="textview">Register</string>
+
+    <string-array name="locations">
+        <item>Colombia</item>
+        <item>Spain</item>
+        <item>Italy</item>
+        <item>France</item>
+    </string-array>
 
 
 </resources>

@@ -11,14 +11,14 @@
     <View
         android:id="@+id/viewLogo"
         android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:background="@color/cardview_dark_background"
+        android:layout_height="36dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etName"
@@ -36,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewLogo"
 
-        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_bias="0.05"
 
         />
 
@@ -188,8 +188,7 @@
         app:layout_constraintStart_toStartOf="parent"
 
         app:layout_constraintTop_toBottomOf="@+id/cbHobbie1"
-        app:layout_constraintVertical_bias="0.05"
-         />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/btnRegister"
@@ -199,7 +198,47 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.1"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewLogo"
+        app:layout_constraintEnd_toEndOf="@+id/viewLogo"
+        app:layout_constraintStart_toStartOf="@+id/viewLogo"
+        app:layout_constraintTop_toTopOf="@+id/viewLogo"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/textInputLayout"
+        app:startIconDrawable="@drawable/ic_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDate"
+        app:layout_constraintVertical_bias="0.05"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+
+
+            android:hint="Place of birth" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

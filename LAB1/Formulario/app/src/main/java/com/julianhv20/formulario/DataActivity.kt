@@ -31,10 +31,12 @@ class DataActivity : AppCompatActivity() {
         val password = bundle?.getString("intentPass")
         val confirmPass = bundle?.getString("intentConfirmPass")
         val date = bundle?.getString("intentDate")
-
+        val hobbies = bundle?.getString("intentHobbies")
+        val sex = bundle?.getString("intentSex")
+        val loc = bundle?.getString("intentLoc")
         //val city = bundle?.getString("intentCity")
 
-        val message = "Nombre: $name\nEmail: $email\nPassword: $password\nConfirmar Password: $confirmPass\nDate: $date"
+        val message = "Nombre: $name\nEmail: $email\nPassword: $password\nConfirm Password: $confirmPass\nDate: $date\nHobbies: $hobbies\nSex: $sex\nPlace of birth: $loc"
         textView.text = message
     }
 }
